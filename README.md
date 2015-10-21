@@ -1,9 +1,20 @@
-Addressbook Tutorial
+RushKeeper
 ====================
 
-This tutorial teaches you some of the basic concepts in Vaadin Framework. It is meant to be 
-a fast read for learning how to get started - not an example on how application should be
-designed. Please note this example uses and requires Java 8 to work.
+Det här är en webapp som simulerar en variant av Runkeeper som kan connecta till HealthVault.
+
+Den är än så länge ett work-in-progress. 
+
+För att köra projektet så behöver man följa de instruktioner som står nedan samt att även lägga till
+hv-sdk-1.6.jar på build pathen. Just nu finns ingen fungerande interaktion med HealthVault men lite 
+experimenterande har gjorts i paketet experiment. Ingen av experiment-klasserna är för tillfället
+använda av projektet.
+
+När man kör projektet enligt instruktionerna neda så kommer man få en massa RunKeeper data presenterat.
+Den datan kommer från json-filen anders94.json. Denna används främst för test för att bygga gränssnittet.
+När man vill koppla mot healthvault istället för mot json-filen så får man i klassen ExerciseService ändra 
+connector till HealthVaultConnector istället.
+
 
 
 Running the example from the command line
