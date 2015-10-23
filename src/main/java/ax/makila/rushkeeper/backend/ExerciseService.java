@@ -39,7 +39,7 @@ public class ExerciseService {
 	
 	private static List<RushKeeperExercise> getExercises() {
 		//Här kan man byta till en annan connector istället
-		Connectable connector = Connectable.getConnector(LOCAL_CONNECTOR);
+		Connectable connector = Connectable.getConnector(HEALTHVAULT_CONNECTOR);
 		
 		return connector.getData();
 	}

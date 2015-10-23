@@ -12,6 +12,8 @@ import org.scribe.model.Verb;
 import org.scribe.utils.OAuthEncoder;
 import org.scribe.utils.Preconditions;
 
+import com.microsoft.hsg.Authenticator;
+
 public class HealthVaultAPI extends DefaultApi20 {
 	
 	//TRIAL AND ERROR
@@ -59,5 +61,9 @@ public class HealthVaultAPI extends DefaultApi20 {
     public Verb getAccessTokenVerb() {
         return Verb.POST;
     }
+	
+	public void test() {
+//		Authenticator abc = new A
+	}
     
 }

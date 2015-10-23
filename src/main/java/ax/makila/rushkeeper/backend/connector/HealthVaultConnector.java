@@ -6,24 +6,23 @@ import java.util.List;
 //import com.microsoft.hsg.request.SimpleRequestTemplate;
 
 import ax.makila.rushkeeper.backend.RushKeeperExercise;
+import ax.makila.rushkeeper.experiment.HealthVaultFileSettings;
+import ax.makila.rushkeeper.experiment.HealthVaultSettings;
 
 public class HealthVaultConnector implements Connectable {
+	
+	HealthVaultSettings settings = new HealthVaultFileSettings();
+	
 	//TODO
 	@Override
 	public List<RushKeeperExercise> getData() {
 		
-//		SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(
-//    			ConnectionFactory.getConnection());
-//    	requestTemplate.setPersonId("8f4c13fe-ce06-49f5-8380-7c1293cf1292");
-//    	requestTemplate.setRecordId("12a44eec-e802-4998-b5cf-495efb73619e");
-    	
-//    	PersonInfo p;
-//    	
-//    	HealthVaultActionPage a;
-    	
-    	
+		HealthVaultService.getInstance().getConnection();
 		
 		return null;
 	}
+	
+	
+	
 
 }
